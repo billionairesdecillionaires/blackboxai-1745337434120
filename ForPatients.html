@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Jeevnik</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+        }
+
+        main {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        h1 {
+            white-space: nowrap;
+        }
+
+        .logo {
+            width: 150px;
+            height: 100px;
+        }
+
+        .glass {
+            background: #c1dfff;
+            backdrop-filter: saturate(180%) blur(10px);
+            -webkit-backdrop-filter: saturate(180%) blur(10px);
+            box-shadow: 0 8px 32px 0 rgb(0 0 0 / 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar Component -->
+    <navbar-component></navbar-component>
+    
+    <!-- Load the navbar component -->
+    <script type="module" src="navbar-component.js"></script>
+    <!-- Section 1 -->
+    <div class="min-h-screen flex flex-col"
+        style="background: linear-gradient(90deg, #fcb97d, #ffffff, #fcb97d)">
+        <header class="flex items-center justify-between px-6 mx-auto w-full">
+            <div class="flex items-center space-x-3">
+                <img alt="Orange butterfly logo with text Jeevnik One Life, One Impact!"
+                    class="logo object-contain" src="images/logo.png" />
+            </div>
+        </header>
+        <main class="flex flex-col items-center justify-center text-center mx-auto w-full relative">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl font-semibold max-w-full text-black">
+                Diabetes Killing your health and Happiness?
+            </h1>
+            <p class="mt-2 text-lg sm:text-xl font-semibold text-black max-w-xl">
+                Stop it with Jeevnik’s Precision care
+            </p>
+            <div class="relative mt-6">
+                <img alt="Circular logo with text One Shot by Jeevnik with orange and red dots"
+                    class="mx-auto rounded-full" src="images/oneshot.png" width="180" />
+            </div>
+            <img alt="Left hand wearing blue glove holding a white medical device"
+                class="w-full object-contain" src="images/page19.png" />
+            <div class="relative mt-10 w-full flex justify-between items-center">
+                <div class="flex flex-col items-center absolute left-1/2 -translate-x-1/2 bottom-[80px]">
+                    <span class="text-xl font-normal text-black mb-1">Know More</span>
+                    <div class="bg-black rounded-full w-12 h-12 flex items-center justify-center">
+                        <i class="fas fa-arrow-down text-white text-2xl"></i>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="min-h-screen flex flex-col items-center justify-center px-4 py-12"
+        style="background: linear-gradient(90deg, #fcb97d, #ffffff, #fcb97d)">
+        <h1 class="text-[56px] font-extrabold text-[#f9733e] mb-12 text-center leading-tight max-w-5xl">
+            How it Works?
+        </h1>
+        <div class="w-full max-w-7xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-12">
+            <!-- Cards 1-4 -->
+            <div class="flex flex-col items-center">
+                <h2 class="font-extrabold text-lg text-black text-center mb-6 leading-snug">In-Depth<br />Evaluation</h2>
+                <div class="bg-white rounded-2xl shadow-[8px_8px_8px_rgba(0,0,0,0.15)] p-6 max-w-xs">
+                    <img class="w-full h-auto mb-4 rounded-xl" src="images/depth.png" alt="Evaluation" />
+                    <p class="text-[15px] text-black leading-relaxed font-normal">
+                        Your health, and lifestyle inputs are taken and assessed by our expert team of Doctor,
+                        Nutritionist and Psychologist
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-col items-center">
+                <h2 class="font-extrabold text-lg text-black text-center mb-6 leading-snug">Personalised<br />Plan Creation</h2>
+                <div class="bg-white rounded-2xl shadow-[8px_8px_8px_rgba(0,0,0,0.15)] p-6 max-w-xs">
+                    <video autoplay loop muted playsinline class="w-full h-auto mb-4 rounded-xl">
+                        <source src="videos/plan.mp4" type="video/mp4" />
+                    </video>
+                    <p class="text-[15px] text-black leading-relaxed font-normal">
+                        Our AI-powered system designs a personalized health plan based on your unique profile and expert advice.
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-col items-center">
+                <h2 class="font-extrabold text-lg text-black text-center mb-6 leading-snug">Guidance and<br />Coaching</h2>
+                <div class="bg-white rounded-2xl shadow-[8px_8px_8px_rgba(0,0,0,0.15)] p-6 max-w-xs">
+                    <img class="w-full h-auto mb-4 rounded-xl" src="images/guidence.png" alt="Coaching" />
+                    <p class="text-[15px] text-black leading-relaxed font-normal">
+                        Health coaches and psychologists help you implement lifestyle changes and form sustainable habits.
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-col items-center">
+                <h2 class="font-extrabold text-lg text-black text-center mb-6 leading-snug">Continous<br />Support</h2>
+                <div class="bg-white rounded-2xl shadow-[8px_8px_8px_rgba(0,0,0,0.15)] p-6 max-w-xs">
+                    <img class="w-full h-auto mb-4 rounded-xl" src="images/continuous.png" alt="Support" />
+                    <p class="text-[15px] text-black leading-relaxed font-normal">
+                        We monitor your progress and adjust your plan to ensure you stay on track. <br /> <br />
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="bg-gradient-to-r from-[#fcb97d] via-[#ffffff] to-[#fcb97d] min-h-screen flex flex-col items-center p-6">
+        <h2 class="font-semibold text-center text-black text-lg max-w-4xl mb-10">
+            Jeevnik’s Diabetes Reversal Program: Benefits That Transform Your Life
+        </h2>
+        <div class="w-full max-w-6xl flex flex-col lg:flex-row justify-between gap-20">
+            <!-- Immediate Benefits -->
+            <section class="flex flex-col max-w-xl w-full">
+                <h3 class="text-blue-800 font-semibold text-xl mb-1">Immediate Benefits</h3>
+                <p class="mb-6 text-sm text-black">Feel the Change from Day One</p>
+                <div class="flex flex-wrap gap-4">
+                    <div class="glass rounded-3xl flex flex-col items-center justify-center text-center p-8 w-64 h-74 shadow-lg">
+                        <img src="https://storage.googleapis.com/a1aa/image/2e4ff545-cafc-4b62-7955-d5bf0c61463c.jpg" width="40" />
+                        <p class="text-black text-sm leading-tight mt-4">Better Blood Sugar<br />Control</p>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <div class="glass rounded-2xl flex flex-col items-center justify-center text-center p-6 w-40 h-40 shadow-lg">
+                            <div class="text-3xl mb-3">😊</div>
+                            <p class="text-black text-xs leading-tight">Reduction of signs<br />and symptoms</p>
+                        </div>
+                        <div class="glass rounded-2xl flex flex-col items-center justify-center text-center p-6 w-40 h-40 shadow-lg">
+                            <img src="https://storage.googleapis.com/a1aa/image/491c1b4f-e603-4e4e-05ce-0ec077d976ac.jpg" width="32" />
+                            <p class="text-black text-xs leading-tight mt-2">Reduced<br />Dependence on<br />Medications</p>
+                        </div>
+                    </div>
+                    <div class="glass rounded-3xl flex flex-col items-center justify-center text-center p-4 w-20 h-74 shadow-lg">
+                        <img src="https://storage.googleapis.com/a1aa/image/faba7c5c-ac5d-4687-9d25-61c65c811382.jpg" width="32" />
+                        <p class="text-black text-xs leading-tight mt-2" style="writing-mode: vertical-lr;">Improved Energy Levels</p>
+                    </div>
+                    <div class="glass rounded-3xl flex flex-row items-center justify-start gap-3 p-6 w-full max-w-xl h-20 shadow-lg">
+                        <img src="https://storage.googleapis.com/a1aa/image/ad634556-6fdc-479e-b758-da012263910e.jpg" width="32" />
+                        <p class="text-black text-sm">Enhanced Mental Clarity</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Long-Term Benefits -->
+            <section class="flex flex-col max-w-xl w-full">
+                <h3 class="text-blue-800 font-semibold text-xl mb-1">
+                    Long-Term Benefits
+                </h3>
+                <p class="mb-6 text-sm text-black">
+                    Build a Healthier, Diabetes-Free Future
+                </p>
+                <div class="grid grid-cols-3 grid-rows-2 gap-2 justify-items-center items-center max-w-xl mx-auto"
+                    style="max-width: 480px;">
+                    
+                    <!-- Top left triangle -->
+                    <div class="glass shadow-lg w-40 h-40 flex flex-col items-center justify-center text-center"
+                        style="clip-path: polygon(50% 0%, 0% 100%, 100% 100%); background: #c1dfff; backdrop-filter: saturate(180%) blur(10px); -webkit-backdrop-filter: saturate(180%) blur(10px);">
+                        <img alt="Shield with cross icon representing prevention of complications" class="mb-3 mt-10" height="32"
+                            src="https://storage.googleapis.com/a1aa/image/5e73a99a-8923-4c63-8832-633cfbf9ced4.jpg"
+                            style="width:32px; height:32px;" width="32" />
+                        <p class="text-black text-xs leading-tight">
+                            Prevention of
+                            <br />
+                            Complications
+                        </p>
+                    </div>
+            
+                    <!-- Top center triangle -->
+                    <div class="glass shadow-lg w-40 h-40 flex flex-col items-center justify-center text-center"
+                        style="clip-path: polygon(50% 100%, 0% 0%, 100% 0%); background: #c1dfff; backdrop-filter: saturate(180%) blur(10px); -webkit-backdrop-filter: saturate(180%) blur(10px);">
+                        <img alt="Glucose meter with refresh arrows icon representing diabetes reversal" class="mb-3" height="32"
+                            src="https://storage.googleapis.com/a1aa/image/012f32f8-cff6-4881-6743-c40d6748933e.jpg"
+                            style="width:32px; height:32px;" width="32" />
+                        <p class="text-black text-xs leading-tight mb-16">
+                            Diabetes
+                            <br />
+                            Reversal
+                        </p>
+                    </div>
+            
+                    <!-- Top right triangle -->
+                    <div class="glass shadow-lg w-40 h-40 flex flex-col items-center justify-center text-center"
+                        style="clip-path: polygon(50% 0%, 0% 100%, 100% 100%); background: #c1dfff; backdrop-filter: saturate(180%) blur(10px); -webkit-backdrop-filter: saturate(180%) blur(10px);">
+                        <img alt="Meditating person icon representing improved mental well-being" class="mb-3 mt-10" height="32"
+                            src="https://storage.googleapis.com/a1aa/image/348c1f8c-f4ee-4315-4523-6a0f487eae6b.jpg"
+                            style="width:32px; height:32px;" width="32" />
+                        <p class="text-black text-xs leading-tight">
+                            Improved Mental
+                            <br />
+                            Well-Being
+                        </p>
+                    </div>
+            
+                    <!-- Bottom left triangle -->
+                    <div class="glass shadow-lg w-40 h-40 flex flex-col items-center justify-center text-center"
+                        style="clip-path: polygon(50% 100%, 0% 0%, 100% 0%); background: #c1dfff; backdrop-filter: saturate(180%) blur(10px); -webkit-backdrop-filter: saturate(180%) blur(10px);">
+                        <img alt="Weight scale icon representing sustainable weight management" class="mb-3" height="32"
+                            src="https://storage.googleapis.com/a1aa/image/f8597f5e-c4fb-4742-882b-4afc2c58c4cc.jpg"
+                            style="width:32px; height:32px;" width="32" />
+                        <p class="text-black leading-tight mb-16" style="font-size: 11px;">
+                            Sustainable <br />Weight
+                            <br />
+                            Management
+                        </p>
+                    </div>
+            
+                    <!-- Bottom center triangle -->
+                    <div class="glass shadow-lg w-40 h-40 flex flex-col items-center justify-center text-center"
+                        style="clip-path: polygon(50% 0%, 0% 100%, 100% 100%); background: #c1dfff; backdrop-filter: saturate(180%) blur(10px); -webkit-backdrop-filter: saturate(180%) blur(10px);">
+                        <img alt="Shield with virus and bacteria icons representing stronger immune system" class="mb-3 mt-10"
+                            height="32"
+                            src="https://storage.googleapis.com/a1aa/image/1083e066-2b18-403c-deea-0ac1112e4fa8.jpg"
+                            style="width:32px; height:32px;" width="32" />
+                        <p class="text-black text-xs leading-tight">
+                            Stronger Immune
+                            <br />
+                            System
+                        </p>
+                    </div>
+            
+                    <!-- Bottom right triangle -->
+                    <div class="glass shadow-lg w-40 h-40 flex flex-col items-center justify-center text-center"
+                        style="clip-path: polygon(50% 100%, 0% 0%, 100% 0%); background: #c1dfff; backdrop-filter: saturate(180%) blur(10px); -webkit-backdrop-filter: saturate(180%) blur(10px);">
+                        <img alt="Clock with arrows icon representing lasting habit formation" class="mb-3" height="32"
+                            src="https://storage.googleapis.com/a1aa/image/61a1328a-d9e8-4a81-0803-7c8a070e2eb3.jpg"
+                            style="width:32px; height:32px;" width="32" />
+                        <p class="text-black text-xs leading-tight mb-16">
+                            Lasting Habit
+                            <br />
+                            Formation
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+    </div>
+</body>
+
+</html>
