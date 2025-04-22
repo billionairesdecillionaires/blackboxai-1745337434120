@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AMPK Activation Assessment</title>
+  <link rel="stylesheet" href="quiz.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation Bar Component -->
+  <navbar-component></navbar-component>
+  
+  <!-- Load the navbar component -->
+  <script type="module" src="navbar-component.js"></script>
+
+  <div class="quiz-container">
+    <h1 class="quiz-title">AMPK Activation Assessment</h1>
+    <div id="quiz-content"></div>
+    <div id="result" class="hidden" style="display:none;">
+      <div class="circular-progress-container">
+        <svg class="circular-progress" width="120" height="120" viewBox="0 0 120 120">
+          <circle class="progress-bg" cx="60" cy="60" r="54" stroke-width="12" fill="none" />
+          <circle class="progress-bar" cx="60" cy="60" r="54" stroke-width="12" fill="none" stroke-linecap="round" />
+          <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" class="progress-text" font-size="24" fill="#000"></text>
+        </svg>
+      </div>
+      <p id="interpretation"></p>
+      <div id="detailed-explanation" class="detailed-explanation" style="display:none;">
+        <h3>What Your Score Means :</h3>
+        <h4>AMPK (AMP-activated protein kinase) is a metabolic master switch that regulates energy metabolism, autophagy, and cellular health.</h4>
+        <div class="icon-text">
+          <i class="fas fa-bolt"></i>
+          <p id="additional-text"></p>
+        </div>
+      </div>
+      <button id="connect-btn" class="connect-btn" style="display:none;">Connect to your future-self</button>
+      <button id="restart-btn">Restart Quiz</button>
+    </div>
+  </div>
+  <div id="future-self-modal" class="modal hidden">
+    <div class="modal-content">
+      <h2 id="modal-title">Meet Your Future Self</h2>
+      <p id="modal-content">Based on your score, here’s what your energized, optimized future looks like...</p>
+      <div>
+        <button id="next-step-btn" class="next-step-btn">Go to Next Step</button>
+      </div>
+    </div>
+  </div>  
+  <script src="quiz.js"></script>
+</body>
+</html>
