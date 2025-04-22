@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    background: linear-gradient(90deg, #ffd5a9, #ffffff, #ffd5a9);
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    padding-top: 64px; /* Height of the navbar */
+}
+
+.background {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    overflow: visible;
+    padding-top: 100px; /* space for navbar */
+    padding-bottom: 300px; /* space for content below particle-video */
+    max-width: 100%;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    z-index: 10; /* Ensure the header is above everything */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+}
+
+.logo {
+    max-width: 200px; /* Adjust size as needed */
+    padding: 10px;
+    margin-right: auto;
+    z-index: 10; /* Push the logo to the left */
+}
+
+.intro-text {
+    position: relative;
+    z-index: 5; /* Above particle-video but below header */
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 60px; /* Increased padding bottom */
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.intro-text h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #201715;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+.intro-text p {
+    font-size: 1.25rem;
+    color: #201715;
+    margin-top: 10px;
+    line-height: 1.4;
+}
+
+.face {
+    position: absolute;
+    width: 40vw;
+    max-width: 370px;
+    height: auto;
+    max-height: 370px;
+    object-fit: cover;
+    z-index: 4; /* Ensure it is in front of particle-video */
+    opacity: 1; /* Fully visible */
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.particle-video {
+    position: absolute;
+    width: 50vw;
+    max-width: 500px;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+    z-index: 3; /* Behind face */
+    opacity: 1; /* Fully visible */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 20px;
+}
+
+.content {
+    position: relative;
+    z-index: 5; /* Above particle-video */
+    display: flex;
+    margin: 0 auto;
+    max-width: 800px;
+    top: 175px;
+    justify-content: center;
+}
+
+.info-box {
+    background: rgba(0, 0, 0); /* Semi-transparent background */
+    color: white;
+    padding: 20px;
+    min-height: 100px; /* Use min-height for flexibility */
+    border-radius: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.discover-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #ffffff; /* Button color */
+    color: rgb(0,  0, 0);
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Scroll content sections */
+.scroll-section {
+    max-width: 900px;
+    margin: 180px auto;
+    padding: 60px 20px;
+    text-align: center;
+    color: #201715;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.scroll-text-large {
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: 1.4;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.scroll-text-medium {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.scroll-text-small {
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.scroll-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #000000, #434343);
+    color: white;
+    padding: 20px 40px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    margin: 20px 0;
+}
+
+.scroll-image {
+    max-width: 100%;
+    height: auto;
+    margin: 60px auto;
+    border-radius: 15px;
+    display: block;
+}
+
+.scroll-button span {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.scroll-button:hover {
+    background: linear-gradient(135deg, #434343, #000000);
+}
+
+.scroll-button.launching-soon {
+    background: white;
+    color: black;
+    border-radius: 30px;
+    padding: 15px 40px;
+    font-weight: 600;
+    font-size: 1.25rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.scroll-button.launching-soon:hover {
+    background: #201715;
+    color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .face {
+        width: 60vw;
+        max-width: none;
+        height: auto;
+        max-height: none;
+        top: 55%;
+    }
+
+    .particle-video {
+        width: 70vw;
+        max-width: none;
+        height: auto;
+        max-height: none;
+        margin-top: 10px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        top: 0;
+        left: 10px;
+        right: 10px;
+        z-index: 10;
+    }
+
+    .intro-text {
+        margin: 0 auto 20px auto;
+        padding-top: 20px;
+        padding-bottom: 40px; /* Adjusted for mobile */
+        max-width: 90%;
+    }
+
+    .intro-text h1 {
+        font-size: 2rem;
+    }
+
+    .intro-text p {
+        font-size: 1rem;
+    }
+
+    .content {
+        margin: 0 auto 20px auto;
+        max-width: 90%;
+    }
+
+    .info-box {
+        padding: 15px;
+        min-height: auto;
+    }
+
+    .discover-button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+
+    /* Responsive scroll sections */
+    .scroll-section {
+        margin: 40px 20px;
+        padding: 10px;
+    }
+
+    .scroll-text-large {
+        font-size: 1.5rem;
+    }
+
+    .scroll-text-medium {
+        font-size: 1.1rem;
+    }
+
+    .scroll-text-small {
+        font-size: 0.9rem;
+    }
+
+    .scroll-button {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+
+    .scroll-button.launching-soon {
+        padding: 12px 30px;
+        font-size: 1rem;
+    }
+}
